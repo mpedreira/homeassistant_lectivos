@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "School day",
+        "description": "Enter a name (e.g. \"School Mateo\") and, optionally, the URL of the calendar CSV (a local path such as /config/lectivo/mateo.csv also works). With no CSV, or if it does not exist or is empty, every Monday-Friday is a school day.",
+        "data": {
+          "name": "Name",
+          "url": "CSV URL (or path) (optional)"
+        }
+      }
+    },
+    "error": {
+      "csv_invalido": "Invalid CSV. Header: inicio,fin,tipo,descripcion; tipo = curso or festivo; dates YYYY-MM-DD.",
+      "ruta_no_permitida": "Home Assistant does not allow reading that path. Use one inside /config."
+    },
+    "abort": {
+      "already_configured": "A sensor with that name already exists."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "School day",
+        "data": {
+          "url": "CSV URL (or path) (optional)"
+        }
+      }
+    },
+    "error": {
+      "csv_invalido": "Invalid CSV. Header: inicio,fin,tipo,descripcion; tipo = curso or festivo; dates YYYY-MM-DD.",
+      "ruta_no_permitida": "Home Assistant does not allow reading that path. Use one inside /config."
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Día lectivo",
+        "description": "Pon un nombre (por ejemplo «Lectivo Mateo») y, si quieres, la URL del CSV con el calendario (también vale una ruta local, como /config/lectivo/mateo.csv). Sin CSV, o si no existe o está vacío, todos los días de lunes a viernes son lectivos.",
+        "data": {
+          "name": "Nombre",
+          "url": "URL (o ruta) del CSV (opcional)"
+        }
+      }
+    },
+    "error": {
+      "csv_invalido": "El CSV no es válido. Cabecera: inicio,fin,tipo,descripcion; tipo = curso o festivo; fechas AAAA-MM-DD.",
+      "ruta_no_permitida": "Home Assistant no permite leer esa ruta. Usa una dentro de /config."
+    },
+    "abort": {
+      "already_configured": "Ya existe un sensor con ese nombre."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Día lectivo",
+        "data": {
+          "url": "URL (o ruta) del CSV (opcional)"
+        }
+      }
+    },
+    "error": {
+      "csv_invalido": "El CSV no es válido. Cabecera: inicio,fin,tipo,descripcion; tipo = curso o festivo; fechas AAAA-MM-DD.",
+      "ruta_no_permitida": "Home Assistant no permite leer esa ruta. Usa una dentro de /config."
+    }
+  }
+}

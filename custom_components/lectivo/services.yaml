@@ -1,0 +1,18 @@
+consultar:
+  name: Consultar día
+  description: Indica si una fecha es lectivo para un sensor de Día lectivo. Devuelve fecha, lectivo (true/false) y motivo.
+  fields:
+    entity_id:
+      name: Sensor
+      description: Sensor de Día lectivo (por ejemplo Lectivo Mateo).
+      required: true
+      selector:
+        entity:
+          integration: lectivo
+          domain: binary_sensor
+    fecha:
+      name: Fecha
+      description: Día a consultar. Si se omite, hoy.
+      required: false
+      selector:
+        date:
